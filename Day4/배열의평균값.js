@@ -5,10 +5,10 @@
 
 //내 풀이
 
-function solution(numbers) {
+function solution(nums) {
   let sum = 0;
-  numbers.forEach((index) => {
+  nums.forEach((index) => {
     sum += index;
   });
-  return sum / numbers.length;
+  return sum / nums.length;
 }
