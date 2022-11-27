@@ -1,16 +1,20 @@
-//반복문
-// 최대값 변수 선언
-// 반복문 안에 조건문 주고 충족 시 최대값 변수에 할당
+function solution(age) {
+  let stringAge = age.toString();
+  let convertedAge = '';
 
-function solution(numbers) {
-  let maxResult = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    for (let j = i + 1; j < numbers.length; j++) {
-      if (numbers[i] * numbers[j] > maxResult)
-        maxResult = numbers[i] * numbers[j];
-    }
-  }
-  return maxResult;
+  [...stringAge].forEach((num) => {
+    if (num == 0) convertedAge += 'a';
+    if (num == 1) convertedAge += 'b';
+    if (num == 2) convertedAge += 'c';
+    if (num == 3) convertedAge += 'd';
+    if (num == 4) convertedAge += 'e';
+    if (num == 5) convertedAge += 'f';
+    if (num == 6) convertedAge += 'g';
+    if (num == 7) convertedAge += 'h';
+    if (num == 8) convertedAge += 'i';
+    if (num == 9) convertedAge += 'j';
+  });
+  return convertedAge;
 }
 
-solution([1, 2, 3, 4, 5]);
+solution(51);
