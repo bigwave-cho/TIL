@@ -1,38 +1,16 @@
-function solution(letter) {
-  let morse = {
-    '.-': 'a',
-    '-...': 'b',
-    '-.-.': 'c',
-    '-..': 'd',
-    '.': 'e',
-    '..-.': 'f',
-    '--.': 'g',
-    '....': 'h',
-    '..': 'i',
-    '.---': 'j',
-    '-.-': 'k',
-    '.-..': 'l',
-    '--': 'm',
-    '-.': 'n',
-    '---': 'o',
-    '.--.': 'p',
-    '--.-': 'q',
-    '.-.': 'r',
-    '...': 's',
-    '-': 't',
-    '..-': 'u',
-    '...-': 'v',
-    '.--': 'w',
-    '-..-': 'x',
-    '-.--': 'y',
-    '--..': 'z',
-  };
-  let inputArr = letter.split(' ');
-  let result = '';
-  inputArr.forEach((m) => {
-    result += morse[m];
-  });
-  return result;
-}
+let solution = (sides) => {
+  let case1 = 0;
+  for (i = 1; i <= Math.max(...sides); i++) {
+    if (i > Math.max(...sides) - Math.min(...sides) && i <= Math.max(...sides))
+      case1++;
+  }
 
-solution('.... . .-.. .-.. ---');
+  // 요소 아닌게 가장 긴 경우
+  // 배열 중 긴 요소 < n < sides[0] + sides[1]
+
+  let case2 = Math.min(...sides) - 1;
+
+  return case1 + case2;
+};
+
+console.log(solution([11, 7]));
