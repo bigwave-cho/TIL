@@ -8,7 +8,6 @@ function solution(array) {
   array.sort((a, b) => {
     return a - b;
   });
-  // console.log(array);
-  // console.log(array[Math.floor(array.length / 2)]);
+
   return array[Math.floor(array.length / 2)];
 }
