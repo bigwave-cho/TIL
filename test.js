@@ -1,4 +1,1 @@
-function solution(sizes) {
-  var answer = 0;
-  return answer;
-}
+console.log(+'1');
