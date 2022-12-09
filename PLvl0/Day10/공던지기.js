@@ -8,7 +8,12 @@ function solution(numbers, k) {
     if (index > numbers.length) index = 1;
     if (index === numbers.length) index = 0;
     result = numbers[index];
-    console.log(result);
   }
   return result;
+}
+
+// 리팩토링
+
+function solution(numbers, k) {
+  return numbers[(2 * (k - 1)) % numbers.length];
 }
