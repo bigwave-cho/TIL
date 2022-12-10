@@ -1,31 +1,11 @@
-function solution(s) {
-  let convertObj = {
-    zero: 0,
-    one: 1,
-    two: 2,
-    three: 3,
-    four: 4,
-    five: 5,
-    six: 6,
-    seven: 7,
-    eight: 8,
-    nine: 9,
-  };
+// function solution(str1, str2) {
+//     if(str1.indexOf(str2)>-1) return 1;
+//     return 2;
+// }
 
-  let result = '';
-  let string = '';
-  [...s].forEach((str) => {
-    if (!isNaN(str * 1)) {
-      result += str;
-    } else {
-      string += str;
-      if (convertObj[string] || string === 'zero') {
-        result += convertObj[string];
-        string = '';
-      }
-    }
-  });
-  return result * 1;
-}
+let solution = (str1, str2) => {
+  console.log(str1.split(str2));
+  return str1.includes(str2) ? 1 : 2;
+};
 
-console.log(solution('four0zero'));
+solution('ab6CDE443fgh22iJKlmn1o', '6D');
