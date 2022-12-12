@@ -1,11 +1,18 @@
-// function solution(str1, str2) {
-//     if(str1.indexOf(str2)>-1) return 1;
-//     return 2;
-// }
+function solution(nums) {
+  let result = 0;
+  for (let i = 0; i <= nums.length - 3; i++) {
+    for (let j = i + 1; j <= nums.length - 2; j++) {
+      for (let k = j + 1; k <= nums.length - 1; k++) {
+        let sum = nums[i] + nums[j] + nums[k];
+        let count = 0;
+        for (let l = 2; l < sum; l++) {
+          sum % l === 0 && count++;
+        }
+        if (count === 0) result++;
+      }
+    }
+  }
+  return result;
+}
 
-let solution = (str1, str2) => {
-  console.log(str1.split(str2));
-  return str1.includes(str2) ? 1 : 2;
-};
-
-solution('ab6CDE443fgh22iJKlmn1o', '6D');
+solution([1, 2, 3, 4]);

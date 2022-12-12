@@ -11,7 +11,7 @@
 //   return count;
 // }
 
-// 다른 사람 풀이 참고
+// 다른 사람 풀이 참고 (split 이용!)
 
 let solution = (array) => {
   console.log(array.join('').split(7).length - 1);
