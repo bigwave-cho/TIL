@@ -1,18 +1,24 @@
-function solution(nums) {
-  let result = 0;
-  for (let i = 0; i <= nums.length - 3; i++) {
-    for (let j = i + 1; j <= nums.length - 2; j++) {
-      for (let k = j + 1; k <= nums.length - 1; k++) {
-        let sum = nums[i] + nums[j] + nums[k];
-        let count = 0;
-        for (let l = 2; l < sum; l++) {
-          sum % l === 0 && count++;
-        }
-        if (count === 0) result++;
-      }
+function solution(N, stages) {
+  let suc = {};
+  let divide = stages.length;
+
+  for (let i = 1; i <= N; i++) {
+    let count = 0;
+    for (let j = 0; j < stages.length; j++) {
+      if (stages[j] === i) count++;
     }
+    console.log(divide);
+    suc[i] = count / divide;
+    divide = divide - count;
   }
-  return result;
+  let resultArr = [];
+  for (var index in suc) {
+    resultArr.push([index, suc[index]]);
+  }
+  resultArr.sort((a, b) => {
+    return b[1] - a[1];
+  });
+  return resultArr.map((arr) => Number(arr[0]));
 }
 
-solution([1, 2, 3, 4]);
+solution(5, [2, 1, 2, 6, 2, 4, 3, 3]);
