@@ -1,24 +1,40 @@
-function solution(N, stages) {
-  let suc = {};
-  let divide = stages.length;
+function solution(n, words) {
+  let spokenWords = [words[0]];
+  let order = 0; // 사람 순서
+  let count = 1; // 몇 바퀴
 
-  for (let i = 1; i <= N; i++) {
-    let count = 0;
-    for (let j = 0; j < stages.length; j++) {
-      if (stages[j] === i) count++;
+  for (let i = 1; i <= words.length - 1; i++) {
+    order = (i % n) + 1;
+    count = Math.floor(i / n + 1);
+    if (
+      words[i][0] !== spokenWords[i - 1][spokenWords[i - 1].length - 1] ||
+      spokenWords.includes(words[i])
+    ) {
+      break;
+    } else {
+      console.log('correct');
     }
-    console.log(divide);
-    suc[i] = count / divide;
-    divide = divide - count;
+
+    spokenWords.push(words[i]);
   }
-  let resultArr = [];
-  for (var index in suc) {
-    resultArr.push([index, suc[index]]);
-  }
-  resultArr.sort((a, b) => {
-    return b[1] - a[1];
-  });
-  return resultArr.map((arr) => Number(arr[0]));
+
+  return spokenWords.length === words.length ? [0, 0] : [order, count];
 }
 
-solution(5, [2, 1, 2, 6, 2, 4, 3, 3]);
+solution(5, [
+  'hello',
+  'observe',
+  'effect',
+  'take',
+  'either',
+  'recognize',
+  'encourage',
+  'ensure',
+  'establish',
+  'hang',
+  'gather',
+  'refer',
+  'reference',
+  'estimate',
+  'executive',
+]);
