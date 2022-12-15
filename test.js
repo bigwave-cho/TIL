@@ -1,40 +1,18 @@
-function solution(n, words) {
-  let spokenWords = [words[0]];
-  let order = 0; // 사람 순서
-  let count = 1; // 몇 바퀴
+let solution = (a, b) => {
+  // 5 20 -> 20 5 -> 0  ;; 5가 최대 공약수.
+  let gcd = (a, b) => {
+    return a % b === 0 ? b : gcd(b, a % b);
+  };
 
-  for (let i = 1; i <= words.length - 1; i++) {
-    order = (i % n) + 1;
-    count = Math.floor(i / n + 1);
-    if (
-      words[i][0] !== spokenWords[i - 1][spokenWords[i - 1].length - 1] ||
-      spokenWords.includes(words[i])
-    ) {
-      break;
-    } else {
-      console.log('correct');
-    }
+  let 분모 = 20 / gcd(a, b);
 
-    spokenWords.push(words[i]);
+  while (분모 % 2 === 0) {
+    분모 = 분모 / 2;
   }
+  while (분모 % 5 === 0) {
+    분모 = 분모 / 5;
+  }
+  return 분모 === 1 ? 1 : 2;
+};
 
-  return spokenWords.length === words.length ? [0, 0] : [order, count];
-}
-
-solution(5, [
-  'hello',
-  'observe',
-  'effect',
-  'take',
-  'either',
-  'recognize',
-  'encourage',
-  'ensure',
-  'establish',
-  'hang',
-  'gather',
-  'refer',
-  'reference',
-  'estimate',
-  'executive',
-]);
+solution(5, 20);
