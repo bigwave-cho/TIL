@@ -1,18 +1,13 @@
-let solution = (a, b) => {
-  // 5 20 -> 20 5 -> 0  ;; 5가 최대 공약수.
-  let gcd = (a, b) => {
-    return a % b === 0 ? b : gcd(b, a % b);
-  };
+function solution(s) {
+  let stack = [];
 
-  let 분모 = 20 / gcd(a, b);
+  [...s].forEach((str, i) => {
+    stack.length === 0 || stack[stack.length - 1] !== s[i]
+      ? stack.push(s[i])
+      : stack.pop();
+  });
 
-  while (분모 % 2 === 0) {
-    분모 = 분모 / 2;
-  }
-  while (분모 % 5 === 0) {
-    분모 = 분모 / 5;
-  }
-  return 분모 === 1 ? 1 : 2;
-};
+  return stack.length ? 0 : 1;
+}
 
-solution(5, 20);
+console.log(solution('aaabaa'));
