@@ -19,6 +19,7 @@
 ## NextJS
 
 ## TypeScript
+- [TypeScript 기본 정리(23. 1. 15)](https://velog.io/@bigwave-cho/TS-Part2-%EC%82%B4%EC%A7%9D-%EC%8B%AC%ED%99%94%EC%9E%91%EC%84%B1%EC%A4%91)
 
 ## Firebase
 
