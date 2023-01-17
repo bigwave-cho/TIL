@@ -14,6 +14,7 @@
 - [Grid(23. 1. 16.)](https://velog.io/@bigwave-cho/CSSGrid)
 
 ## JavaScript
+- [Class(23. 1. 18.)](https://velog.io/@bigwave-cho/JS-25%EC%9E%A5-%ED%81%B4%EB%9E%98%EC%8A%A4)
 
 ## React
 
