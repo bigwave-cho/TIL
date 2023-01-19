@@ -29,3 +29,6 @@
 ## Firebase
 
 ## CS
+
+## Flutter(Dart)
+- [Dart 기초 문법 variables, data types, functions(23. 1. 19.](https://velog.io/@bigwave-cho/Dart-%EB%8B%A4%ED%8A%B8-%EA%B8%B0%EC%B4%88)
