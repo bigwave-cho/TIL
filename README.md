@@ -33,3 +33,4 @@
 ## Flutter(Dart)
 - [Dart 기초 문법 variables, data types, functions(23. 1. 19.)](https://velog.io/@bigwave-cho/Dart-%EB%8B%A4%ED%8A%B8-%EA%B8%B0%EC%B4%88)
 - [Dart 기초 문법 class(23. 1. 20.)](https://velog.io/@bigwave-cho/Dart-%EB%8B%A4%ED%8A%B8-%EA%B8%B0%EC%B4%88)
+- [Flutter 개요 및 설치(23. 1. 22.)](https://velog.io/@bigwave-cho/Flutter-%EA%B0%9C%EC%9A%94%EC%99%80-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95)
