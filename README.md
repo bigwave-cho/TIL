@@ -36,4 +36,6 @@
 - [Flutter 개요 및 설치(23. 1. 22.)](https://velog.io/@bigwave-cho/Flutter-%EA%B0%9C%EC%9A%94%EC%99%80-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95)
 - [Flutter Pomodoros(23. 1. 23.)](https://github.com/bigwave-cho/start-flutter)
 - [Flutter toonFlix(23. 1. 24.)](https://github.com/bigwave-cho/toonflix)
+- [Flutter앱 Firebase에 연결하기(23. 1. 25.)](https://velog.io/@bigwave-cho/Flutter-Flutter-Firebase-%EC%97%B0%EA%B2%B0)
+- [Flutter FCM이용 알림보내기(23. 1. 26.)](https://velog.io/@bigwave-cho/Flutter-FCM%EC%95%88%EB%93%9C%EB%A7%8C)
 
