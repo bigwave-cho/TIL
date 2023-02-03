@@ -42,4 +42,6 @@
 - [Flutter앱 Firebase에 연결하기(23. 1. 25.)](https://velog.io/@bigwave-cho/Flutter-Flutter-Firebase-%EC%97%B0%EA%B2%B0)
 - [Flutter FCM이용 알림보내기(23. 1. 26.)](https://velog.io/@bigwave-cho/Flutter-FCM%EC%95%88%EB%93%9C%EB%A7%8C)
 
+## Git
+- [실수로 원치 않는 파일 업로드 & 커밋내역 삭제하기(23. 1. 3.)](https://velog.io/@bigwave-cho/Git-%EC%8B%A4%EC%88%98%EB%A1%9C-%EC%9B%90%EC%B9%98-%EC%95%8A%EB%8A%94-%ED%8C%8C%EC%9D%BC-%EC%98%AC%EB%A0%B8%EC%9D%84-%EB%95%8C)
 
